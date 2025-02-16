@@ -9,13 +9,14 @@ bot = commands.Bot(command_prefix=".",self_bot=True,intents=discord.Intents.all(
 async def on_ready():
     print("\033[94m" + """
 
-██████╗░██╗███████╗░█████╗░
-██╔══██╗██║╚════██║██╔══██╗
-██████╔╝██║░░███╔═╝███████║
-██╔══██╗██║██╔══╝░░██╔══██║
-██║░░██║██║███████╗██║░░██║
-╚═╝░░╚═╝╚═╝╚══════╝╚═╝░░╚═╝
-""" + "\033[0m" + "Made By @codewithriza")
+███╗   ██╗ ██████╗      █████╗ ██████╗ ██╗   ██╗███████╗███████╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔══██╗██║   ██║██╔════╝██╔════╝
+██╔██╗ ██║██║   ██║    ███████║██████╔╝██║   ██║███████╗█████╗  
+██║╚██╗██║██║   ██║    ██╔══██║██╔══██╗██║   ██║╚════██║██╔══╝  
+██║ ╚████║╚██████╔╝    ██║  ██║██████╔╝╚██████╔╝███████║███████╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+                                                                
+""" + "\033[0m" + "Made By NO ABUSE ")
 
 
 
@@ -28,7 +29,7 @@ async def on_ready():
         print(f"{Fore.LIGHTRED_EX} Clone Guild Id Incorrect")
         return
     
-    ownguildid = int(input(f"Where You Want To Clone Guild Id : "))
+    ownguildid = int(input(f"Where You Want To Clone Server Guild Id : "))
     ownguild = bot.get_guild(ownguildid)
     if (ownguild == None):
          print(f"{Fore.LIGHTRED_EX} Cloned Guild Id Incorrect")
